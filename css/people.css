@@ -1,0 +1,62 @@
+.box form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box form input{
+	padding: 15px;
+	font-size: 110%;
+	border: 1px solid #4d9900;
+	border-radius: 5px;
+	flex: 4;
+}
+
+.box form input[type=submit]{
+	font-size: 150%;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	color: #fff;
+	background-color: #4d9900;
+	border: none;
+	flex: 1;
+	padding: 10px;
+}
+
+.box form input[type=submit]:hover{
+	background-color: #336600;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.users {
+	display: flex;
+}
+
+.users .navn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.users .navn {
+	min-width: 50%;
+}
+
+.navn {
+	margin-left: 15px;
+}
+
+.navn i {
+	color: #666;
+}
+
+.search p {
+	margin-top: 10px;
+}

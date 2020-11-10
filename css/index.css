@@ -1,0 +1,71 @@
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+form input, form textarea{
+	padding: 10px;
+	font-size: 110%;
+	border: 1px solid #4d9900;
+	border-radius: 5px;
+	flex: 1;
+}
+
+form textarea {
+	font-size: 100%;
+	resize: none;
+	font-family: 'Arial', sans-serif;
+}
+
+input[type=submit]{
+	font-size: 150%;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	color: #fff;
+	background-color: #4d9900;
+	border: none;
+	margin-top: 5px;
+}
+
+input[type=submit]:hover {
+	background-color: #336600;
+}
+
+.navn {
+	display: flex;
+	align-items: center;
+}
+
+.navn h3 {
+	margin-left: 10px;
+	min-width: 50%;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.dato p {
+	color: #666;
+	font-size: 80%;
+}
+
+.delete {
+	float: right;
+	margin: 10px 15px;
+}
+
+input[type=image]{
+	float: right;
+	border: none;
+	padding: 0;
+}
+
+.box .text {
+	margin: 10px auto;
+}

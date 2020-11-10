@@ -1,0 +1,115 @@
+html, body {
+	height: 100%;
+	background-image: url(../media/image/background.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 15%;
+}
+
+body {
+	display: flex;
+}
+
+.container {
+	background-color: #fff;
+	margin: auto;
+	padding: 40px;
+	width: 400px;
+	-webkit-box-shadow: 0px 0px 48px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 48px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 48px 0px rgba(0,0,0,0.75);
+}
+
+label {
+	color: #f00;
+	font-weight: bold;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+form h1 {
+	font-size: 210%;
+	margin-bottom: 10px;
+	color: #4d9900;
+}
+
+form a {
+	text-decoration: none;
+	color: #4d9900;
+	font-size: 90%;
+	margin-top: 10px;
+}
+
+form a:hover {
+	text-decoration: underline;
+}
+
+form input {
+	padding: 10px 10px 10px 45px;
+	margin-top: 15px;
+	font-size: 110%;
+	border: 1px solid #4d9900;
+	border-radius: 5px;
+}
+
+input[type=submit]{
+	padding: 10px;
+	font-size: 150%;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	color: #fff;
+	background-color: #4d9900;
+	border: none;
+}
+
+input[type=submit]:hover{
+	background-color: #336600;
+}
+
+form input:focus {
+	outline: none;
+	-webkit-box-shadow: 0 0 3pt 2pt #4d9900;
+	-moz-box-shadow: 0 0 3pt 2pt #4d9900;
+	box-shadow: 0 0 3pt 2pt #4d9900;
+}
+
+/* Icons */
+
+.user {
+	background: url(../media/icons/user.png) no-repeat scroll 7px 7px;
+	background-size: 20px 20px;
+	background-position: 10px center;
+}
+
+.pass {
+	background: url(../media/icons/pass.png) no-repeat scroll 7px 7px;
+	background-size: 20px 20px;
+	background-position: 10px center;
+}
+
+.mail {
+	background: url(../media/icons/mail.png) no-repeat scroll 7px 7px;
+	background-size: 20px 20px;
+	background-position: 10px center;
+}
+
+@media screen and (max-width: 600px){
+	.container {
+		width: 100%;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		padding: 20px;
+	}
+	form h1 {
+		font-size: 190%;
+		margin-bottom: 15px;
+	}
+	body {
+		background-image: none;
+		background-color: #fff;
+	}
+}

@@ -1,0 +1,72 @@
+body, html {
+	height: 100%;
+}
+
+.welcome-container {
+	display: flex;
+	height: 100%;
+	background-image: url(../media/image/background.png);
+	background-repeat: repeat;
+	background-size: 15%;
+}
+
+#left {
+	background-color: #4d9900;
+	color: #fff;
+	flex: 1;
+	display: flex;
+}
+
+#left-content {
+	margin: auto;
+	font-size: 110%;
+}
+
+#right {
+	flex: 1;
+	display: flex;
+}
+
+#right-content {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+#right-content a{
+	font-size: 200%;
+	text-align: center;
+	border: 2px solid #4d9900;
+	background-color: #fff;
+	border-radius: 60px;
+	color: #4d9900;
+	text-decoration: none;
+	flex: 1;
+	margin: 0 0 10px 0;
+	padding: 10px 0;
+}
+
+#right-content a:hover {
+	background-color: #4d9900;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+@media screen and (max-width: 1000px){
+	.welcome-container {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#right-content {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	#left-content {
+		font-size: 90%;
+	}
+}

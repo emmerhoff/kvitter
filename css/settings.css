@@ -1,0 +1,73 @@
+label {
+	color: #f00;
+	font-weight: bold;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+form input[type=text], form input[type=password], form input[type=submit]{
+	padding: 10px 10px 10px 10px;
+	font-size: 110%;
+	border: 1px solid #4d9900;
+	border-radius: 5px;
+	flex: 1;
+}
+
+input[type=text], input[type=password]{
+	margin-bottom: 20px;
+}
+
+input[type=submit]{
+	padding: 10px;
+	font-size: 150%;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	color: #fff;
+	background-color: #4d9900;
+	border: none;
+}
+
+input[type=submit]:hover{
+	background-color: #336600;
+}
+
+form input:focus {
+	outline: none;
+	-webkit-box-shadow: 0 0 3pt 2pt #4d9900;
+	-moz-box-shadow: 0 0 3pt 2pt #4d9900;
+	box-shadow: 0 0 3pt 2pt #4d9900;
+}
+
+.pictures {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.pictures span{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5px;
+}
+
+input[type=radio]{
+	display: none;
+}
+
+span label {
+	height: 100px;
+}
+
+input[type=radio]:checked+label{
+	outline: none;
+	-webkit-box-shadow: 0 0 3pt 4pt #4d9900;
+	-moz-box-shadow: 0 0 3pt 4pt #4d9900;
+	box-shadow: 0 0 3pt 4pt #4d9900;
+}
